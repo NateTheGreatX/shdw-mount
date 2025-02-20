@@ -9,8 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsc -w ./src/index.ts",
-    "build": "tsc",
-    "server": "pnpm build && scp -r ./dist/* root@10.10.55.5:/home/dagger/shdw-mount/dist"
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",

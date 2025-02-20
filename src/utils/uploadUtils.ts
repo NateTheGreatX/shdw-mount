@@ -129,8 +129,7 @@ export class UploadUtils {
         }
 
         try {
-          const result = await completeResponse.json();
-          return result;
+          return await completeResponse.json();
         } catch (e) {
           throw e;
         }

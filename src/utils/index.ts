@@ -12,9 +12,7 @@ export function calculateTransferRate(info: TransferInfo): number {
   // Convert bytes to megabytes (1 MB = 1,048,576 bytes)
   const fileSizeInMB = info.buffer.length / (1024 * 1024);
   // Calculate transfer rate in MB/s
-  const transferRate = fileSizeInMB / (info.timeTaken / 1000);
-
-  return transferRate; // This will return the transfer rate in MB/s
+  return fileSizeInMB / (info.timeTaken / 1000); // This will return the transfer rate in MB/s
 }
 
 export async function sleep(ms) {

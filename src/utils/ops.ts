@@ -3,6 +3,8 @@ import { NodeFile } from "./NodeFile";
 import { calculateTransferRate } from "./index";
 import * as fuse from "@cocalc/fuse-native";
 
+// Testing putting ops here.  unsure if this is how I want to do it:
+
 export const getOps = ({bucketId, fileBuffer, sdk, invalidateCache, uploadChunkTask, completeLargeFile}) => ({
   flush: async (path, fd, cb) => {
     // This could signal the end of writes. Combine all buffers and upload
