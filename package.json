@@ -1,0 +1,35 @@
+{
+  "name": "shdw-mount",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "shdw-mount": "./dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsc -w ./src/index.ts",
+    "build": "tsc",
+    "server": "pnpm build && scp -r ./dist/* root@10.10.55.5:/home/dagger/shdw-mount/dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shdwdrive/sdk": "1.0.3",
+    "@solana/web3.js": "1.98.0",
+    "@types/node": "22.10.5",
+    "axios": "1.7.9",
+    "chalk": "5.4.1",
+    "commander": "13.1.0",
+    "crypto-js": "4.2.0",
+    "fuse-native": "2.2.6",
+    "@cocalc/fuse-native": "2.4.1",
+    "node-fetch": "3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.5",
+    "ts-node": "10.9.2",
+    "typescript": "5.7.3"
+  }
+}
